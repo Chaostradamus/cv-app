@@ -2,6 +2,8 @@ import { useState } from 'react';
 import '../styles/GeneralInfo.css';
 
 const GeneralInfo = () => {
+
+  // gen info state set to null and function to update in real time
   const [generalInfo, setGeneralInfo] = useState({
     name: '',
     email: '',
@@ -17,7 +19,7 @@ const GeneralInfo = () => {
       [name]: value
     }));
   };
-
+// for future togglign o edit or saved
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsEditing(false);
