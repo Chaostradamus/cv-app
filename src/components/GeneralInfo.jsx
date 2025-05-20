@@ -1,25 +1,24 @@
-import { useState } from 'react';
-import '../styles/GeneralInfo.css';
+import { useState } from "react";
+import "../styles/GeneralInfo.css";
 
 const GeneralInfo = () => {
-
   // gen info state set to null and function to update in real time
   const [generalInfo, setGeneralInfo] = useState({
-    name: '',
-    email: '',
-    phone: ''
+    name: "",
+    email: "",
+    phone: "",
   });
   const [isEditing, setIsEditing] = useState(true);
 
   // updates in real time
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setGeneralInfo(prev => ({
+    setGeneralInfo((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
   };
-// for future togglign o edit or saved
+  // for future togglign o edit or saved
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsEditing(false);
@@ -27,7 +26,6 @@ const GeneralInfo = () => {
 
   const handleEdit = () => {
     setIsEditing(true);
-    
   };
 
   return (
@@ -45,7 +43,7 @@ const GeneralInfo = () => {
             />
           </label>
           <label>
-            Email:
+            Email/Domain:
             <input
               type="email"
               name="email"
