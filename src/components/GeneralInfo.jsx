@@ -68,7 +68,7 @@ const GeneralInfo = () => {
           <p>Email: {generalInfo.email}</p>
           <p>Phone: {generalInfo.phone}</p>
           <button type="button" onClick={handleEdit}>
-            Edit
+            Edit Info
           </button>
         </div>
       )}
