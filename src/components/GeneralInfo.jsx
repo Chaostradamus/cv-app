@@ -64,7 +64,7 @@ const GeneralInfo = () => {
         </form>
       ) : (
         <div className="info-display">
-          <p>Name: {generalInfo.name}</p>
+          <p>Full Name: {generalInfo.name}</p>
           <p>Email: {generalInfo.email}</p>
           <p>Phone: {generalInfo.phone}</p>
           <button type="button" onClick={handleEdit}>
