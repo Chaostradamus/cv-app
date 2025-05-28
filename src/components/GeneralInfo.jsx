@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../styles/GeneralInfo.css";
 
-const GeneralInfo = () => {
+const GeneralInfo = ({ data, setData }) => {
   // gen info state set to null and function to update in real time
   const [generalInfo, setGeneralInfo] = useState({
     name: "",
